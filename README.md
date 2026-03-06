@@ -21,6 +21,7 @@ Der gesamte Prozess läuft clientseitig – keine Uploads, keine Serverkosten.
 - Automatische Skalierung auf max. 1024px Breite
 - Speicherbereinigung via `URL.revokeObjectURL()` beim Unmount
 - Dateigrößenlimit: 500 MB
+- Kompatibel mit mobilen Browsern (touch-optimiert via `touchAction: 'manipulation'`)
 
 ---
 
