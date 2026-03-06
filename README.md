@@ -98,6 +98,10 @@ Der gesamte Prozess läuft clientseitig – keine Uploads, keine Serverkosten.
 **Warum virtuelles Canvas (kein DOM)?**  
 Das Canvas-Element wird nie in den DOM eingehängt – es existiert nur im Speicher. Das vermeidet unnötige Reflows und hält die Komponente performant.
 
+**Warum kein ffmpeg-wasm?**  
+ffmpeg-wasm wäre eine naheliegende Alternative, bringt aber erhebliche Nachteile mit sich: Die WASM-Binary ist ca. 30 MB groß, erfordert `SharedArrayBuffer` (und damit spezielle HTTP-Header: `Cross-Origin-Opener-Policy`, `Cross-Origin-Embedder-Policy`), was viele Hosting-Umgebungen nicht unterstützen. Die native Canvas+Video-API des Browsers reicht für Frame-Extraktion vollständig aus – ohne zusätzliche Abhängigkeiten, ohne Ladezeit, ohne Konfigurationsaufwand.  
+Das Canvas-Element wird nie in den DOM eingehängt – es existiert nur im Speicher. Das vermeidet unnötige Reflows und hält die Komponente performant.
+
 ---
 
 ## Entwickelt während der Ausbildung
