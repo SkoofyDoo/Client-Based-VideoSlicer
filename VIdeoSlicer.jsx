@@ -159,7 +159,7 @@ function VideoSlicer({
                 try {
                     await captureFrame(i * interval);
                 } catch {
-                    /* пропускаем проблемные таймкоды */
+                    /* Problematische Timecodes  */
                 }
             }
             // Ergebnis speichern und Callback auslösen
