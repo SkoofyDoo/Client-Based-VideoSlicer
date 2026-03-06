@@ -18,10 +18,10 @@ Der gesamte Prozess läuft clientseitig – keine Uploads, keine Serverkosten.
 - Konfigurierbare maximale Frame-Anzahl je nach Auswahltyp (`CID`, `CIDface`, `CID1rot` usw.)
 - Fortschrittsanzeige in Echtzeit
 - Timeout-Handling bei hängenden Seek-Operationen (15 Sekunden)
-- Automatische Skalierung auf max. 1024px Breite
+- Automatische Skalierung – konfigurierbare Ausgabebreite (Standard: 1024px)
 - Speicherbereinigung via `URL.revokeObjectURL()` beim Unmount
-- Dateigrößenlimit: 500 MB
-- Kompatibel mit mobilen Browsern (touch-optimiert via `touchAction: 'manipulation'`)
+- Konfigurierbare Frame-Qualität & Dateigrößenlimit: (Standard: FRAME_QUALITY:0.5 & MAX_FILE_SIZE: 500 MB)
+- Kompatibel mit mobilen Browsern wie Safari usw. (touch-optimiert via `touchAction: 'manipulation'`)
 
 ---
 
